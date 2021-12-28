@@ -102,6 +102,7 @@ app
         req.session.user = user;
         
        
+       res.send("Welcome"+req.body.username);
         res.redirect("/dashboard");
     } catch (error) {
       console.log(error)
